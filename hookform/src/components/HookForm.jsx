@@ -10,6 +10,7 @@ const HookForm = props => {
             [e.target.name]: e.target.value
         });
     }
+    
     const createUser = e =>{
         e.preventDefault();
         console.log("User created!");

@@ -7,14 +7,14 @@ import react, { useState } from 'react';
 function App() {
   const [msg , setMsg]=useState("");
  
-  const youveGotMail = ( newMessage ) => {
+  const alterMsg = ( newMessage ) => {
     setMsg( newMessage );
 }
 
   
   return (
     <div className="App">
-      <Tab onNewMessage={youveGotMail}/>
+      <Tab onNewMessage={alterMsg}/>
       <Display message={msg} />
     
     </div>

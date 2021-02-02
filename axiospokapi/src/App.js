@@ -3,7 +3,7 @@ import './App.css';
 import ListComponent from './components/ListComponent'
 function App() {
   return (
-    <div className="App">
+    <div >
     
     <ListComponent />
    

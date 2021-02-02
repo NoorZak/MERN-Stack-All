@@ -1,15 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import ListComponent from './components/ListComponent';
-
+import ListComponent from './components/ListComponent'
 function App() {
- 
- 
   return (
     <div className="App">
-      
-      <ListComponent/>      
-      
+    
+    <ListComponent />
+   
     </div>
   );
 }

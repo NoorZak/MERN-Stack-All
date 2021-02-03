@@ -5,14 +5,7 @@ import axios from 'axios';
 const People = ({id, SearchFor}) => {
 
     const [people, setPeople] = useState("");
-    const [person, setperson] = useState({
-        name: "",
-        gender: "",
-        height: "",
-        eye_color: "",
-        birth_year: ""
-    });
-
+    
     
     useEffect(() => {
         axios.get(`https://swapi.dev/api/people/${id}`)
@@ -29,6 +22,7 @@ const People = ({id, SearchFor}) => {
 
 
     return (
+
         <div >
 
             {/* <input type="submit" onClick={fetch} /> */}

@@ -11,8 +11,9 @@ function App() {
   
   return (
     <div className="App">
+      <Main  />
+     
       <Router>
-      <Main path="/" />
      
         <People path="/people/:id" />
         <Planet path="/planets/:id" />

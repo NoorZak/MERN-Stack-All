@@ -1,8 +1,9 @@
 import React from 'react'
 import axios from 'axios';
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { Button } from '@material-ui/core';
 
-
-
+import { FormControl } from '@material-ui/core';
 
 
 
@@ -24,29 +25,31 @@ const Form = () => {
     
 
     return (
-        <div>
-    <form onSubmit={createProduct}  >
+        <div className="row justify-content-center" >
+    <form className="" onSubmit={createProduct}  >
 
-     <p>   
-        <label htmlFor="title">Title</label>
-        <input type="text" name = "title" id ="title"/>
-    </p>
-
-    <p>   
-        
-        <label htmlFor="price">Price</label>
-        <input type="number" name = "price" id ="price"/>
-    </p>
-  
-    <p>   
+    <div className="form-group"> 
+        {/* <label htmlFor="title">Title</label> */}
+        <input type="text" name = "title" id ="title" placeholder="title"/>
     
-        <label htmlFor="desc">Description</label>
-        <input type="text" name = "desc" id ="desc"/>
-    </p>
+    </div>
+ 
+      <div className="form-group"> 
+        
+        {/* <label htmlFor="price">Price</label> */}
+        <input type="number" name = "price" id ="price" placeholder="price"/>
+      </div>
   
-    <p>   
-        <button>Create</button>
-    </p>
+    <div className="form-group">   
+    
+        {/* <label htmlFor="desc">Description</label> */}
+       
+        <input type="text" name = "desc" id ="desc" placeholder="description"/>
+    </div>
+  
+    <div className="form-group"> 
+        <button className="btn btn-primary">Create</button>
+    </div>
 
     </form>    
         </div>

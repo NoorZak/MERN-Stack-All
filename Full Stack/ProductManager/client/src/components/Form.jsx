@@ -13,6 +13,7 @@ const Form = () => {
 
 
     const createProduct = e =>{
+        
         axios.post("http://localhost:8000/api/products/create", {
             title: e.target.title.value,
             price: e.target.price.value,

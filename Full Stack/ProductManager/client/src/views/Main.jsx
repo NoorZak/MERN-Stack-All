@@ -15,11 +15,19 @@ export default () => {
                 setLoaded(true);
             });
     },[])
+
+
+
+    const removeFromDom = productId => {
+        setProducts(products.filter(product => product._id != productId));
+    }
+
+
     return (
         <Paper elevation={3}>
         <Form/>
            <hr/>
-           {loaded && <ProdList products={products}/>}
+           {loaded && <ProdList products={products} removeFromDom={removeFromDom}/>}
            </Paper>    )
 }
 

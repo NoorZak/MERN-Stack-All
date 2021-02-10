@@ -11,6 +11,7 @@ const ProdList = props => {
         axios.delete('http://localhost:8000/api/products/' + productId)
             .then(res => {
                 removeFromDom(productId);
+                navigate("/products/");           
             })
     }
     return (

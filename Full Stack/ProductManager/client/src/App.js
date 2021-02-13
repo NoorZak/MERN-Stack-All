@@ -13,6 +13,7 @@ function App() {
         <Main path="products/"/>
         <Details path="products/:id" /> 
         <Update path="products/:id/edit"/>
+      
       </Router> 
       </div>
   );

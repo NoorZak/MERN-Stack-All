@@ -21,7 +21,6 @@ function App() {
       <Router>
         <ManagePlayers path="/players/*"/>
         <ManageStatus path="/status/*"/>
-        <Redirect noThrow from="/" to="/players"/>
       </Router>
     </div>
   );

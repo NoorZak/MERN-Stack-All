@@ -34,6 +34,8 @@ const ManagePlayers = props => {
                     errArr.push(errResponse[key].message);
                 }
                 setErrors(errArr);
+                // navigate("/players/new");
+            
             });
     }
 
@@ -55,7 +57,6 @@ const ManagePlayers = props => {
             </nav>
             
             <Router>
-                <Redirect noThrow from="*/" to="/players/list"/>
                 <PlayerList path="/list" players={players} handleDelete={deletePlayer}/>
                 <PlayerForm path="/new" handleSubmit={createPlayer} errors={errors}/>
             </Router>
